@@ -13,7 +13,7 @@ minimum_pre_commit_version: "1.14.0"
 repos:
   - repo: https://github.com/pre-commit/mirrors-prettier
     # keep it before yamllint
-    rev: "v3.0.0-alpha.6"
+    rev: "v3.0.0-alpha.9-for-vscode"
     hooks:
       - id: prettier
         # Temporary excludes so we can gradually normalize the formatting
@@ -47,6 +47,6 @@ repos:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
   - repo: https://github.com/ansible/ansible-lint.git
-    rev: v6.14.6
+    rev: v6.15.0
     hooks:
       - id: ansible-lint
